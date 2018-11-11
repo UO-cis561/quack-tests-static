@@ -30,3 +30,7 @@
 *.exe
 *.out
 *.app
+
+# OS metadata
+.DS_Store
+
