@@ -1,3 +1,0 @@
-//Classes may be defined in any order 
-class Foo() extends Bar { }
-class Bar() { }

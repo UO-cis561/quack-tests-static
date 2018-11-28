@@ -9,4 +9,3 @@ SUCCESS_5
 False Singleton Success
 True Singleton Success
 Singleton not equal success
-
