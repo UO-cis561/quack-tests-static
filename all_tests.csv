@@ -41,6 +41,7 @@ good_simple_overridingmethod.qk,PASS
 good_simple_tree_good_anyorder.qk,PASS
 good_simple_unary_negation.qk,PASS
 good_simple_while_and_sugar.qk,PASS
+good_sort.qk,PASS
 good_this_is_string.qk,PASS
 good_typecase.qk,PASS
 good_typecase_not_always_matching.qk,PASS
