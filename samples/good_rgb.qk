@@ -1,0 +1,29 @@
+/*
+ * From Winter 2017 final
+ */
+class RGB(r: Int, g: Int, b: Int) {
+    this.r = r; this.g = g; this.b = b;
+    def STR(): String {
+        return "rgb(" + this.r.STR() +
+            "," + this.g.STR() +
+            "," + this.b.STR() +
+            ")";
+    }
+}
+
+class Red() extends RGB {
+    this.r = 255; this.g = 0; this.b = 0;
+    def STR(): String { return "RED"; }
+}
+
+class Purple() extends RGB {
+    this.r = 150; this.g = 0; this.b = 150;
+    def STR(): String { return "PURPLE"; }
+}
+
+color = RGB(0,0,0);
+color.PRINT();
+"\n".PRINT();
+color = Red();
+color.PRINT();
+"\n".PRINT();

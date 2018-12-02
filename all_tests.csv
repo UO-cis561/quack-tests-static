@@ -6,6 +6,7 @@ bad_break.qk,SCANNER
 bad_class.qk,PARSER
 bad_class_and_method_match2.qk,CLASS_HIERARCHY
 bad_class_params.qk,PARSER
+bad_contravariance.qk,CLASS_HIERARCHY
 bad_duplicate_class.qk,PARSER
 bad_escape.qk,SCANNER
 bad_init.qk,INIT_BEFORE_USE
@@ -17,6 +18,7 @@ bad_true_false.qk,PARSER
 bad_typecase_invalid_type.qk,TYPE_INF
 bad_typecase_recast.qk,TYPE_INF
 bad_uninit_field.qk,INIT_BEFORE_USE
+bad_w17_final_weight_height.qk,TYPE_INF
 circular_dependency.qk,CLASS_HIERARCHY
 duplicate_class.qk,PARSER
 duplicate_method.qk,PARSER
@@ -27,6 +29,7 @@ good_add_return_none.qk,PASS
 good_adv_constructor_init.qk,PASS
 good_init_before_use.qk,PASS
 good_return_both_if.qk,PASS
+good_rgb.qk,PASS
 good_schroedinger2.qk,PASS
 good_short_circuit_outside_conditional.qk,PASS
 good_simple_classes_tree.qk,PASS

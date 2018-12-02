@@ -1,0 +1,25 @@
+/*
+ * Type inference error on variable measure
+ */
+class Weight(w: Int) {
+    this.w = w;
+    def inc(delta: Int): Weight {
+        return Weight(this.w + delta);
+    }
+}
+
+class Height(h: Int) {
+    this.h = h;
+    def inc(delta: Int): Height {
+        return Height(this.h + delta);
+    }
+}
+
+x = 42;
+if x > 13 {
+    measure = Weight(x);
+} else {
+    measure = Height(x);
+}
+// measure type infers to Obj which has no method "inc"
+size = measure.inc(13);
