@@ -1,0 +1,9 @@
+class Pt(x: Int, y: Int) {
+    this.x = x;
+    this.y = y;
+    /* Override Obj.EQUALS */
+    def EQUALS(other: Pt): Boolean {
+        return this.x == other.x and
+        this.y == other.y;
+    }
+}

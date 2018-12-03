@@ -1,0 +1,19 @@
+class Pt(x: Int, y: Int) {
+    this.x = x; this.y = y;
+    def x_(): Int { return this.x; }
+    def y_(): Int { return this.y; }
+    def PLUS(other: Pt): Pt {
+        return Pt(this.x + other.x_(), this.y + other.y_());
+    }
+}
+
+x = 42;
+if x < 13 {
+    w = Pt(5, 7);
+    y = Pt(4, 2);
+    z = w + y;
+} else {
+    x = 5;
+    z = x + 4;
+}
+z.PRINT(); "\n".PRINT();

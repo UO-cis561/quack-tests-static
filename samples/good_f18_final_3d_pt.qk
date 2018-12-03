@@ -1,0 +1,34 @@
+class Pt(x: Int, y: Int) {
+    this.x = x; this.y = y;
+    def x_(): Int { return this.x; }
+    def y_(): Int { return this.y; }
+    def PLUS(other: Pt): Pt {
+        return Pt(this.x + other.x_(), this.y + other.y_());
+    }
+    def STR(): String {
+        return "(" + this.x.STR() + "," + this.y.STR() + ")";
+    }
+}
+
+class Pt3D(x: Int, y: Int, z: Int) extends Pt {
+    this.x = x; this.y = y; this.z = z;
+    def x_(): Int { return this.x; }
+    def y_(): Int { return this.y; }
+    def z_(): Int { return this.z; }
+    def PLUS(other: Pt): Pt {
+        typecase other {
+            three: Pt3D { return Pt3D(this.x + three.x_(),
+                   this.y + three.y_(), this.z + three.z_()); }
+            two: Pt { return two + this; }
+        }
+        return Pt3D(0, 0, 0);
+    }
+    def STR(): String {
+        return "(" + this.x.STR() + "," + this.y.STR() + "," + this.z.STR(); ")";
+    }
+}
+
+p1 = Pt(5,10);
+p2 = Pt3D(2, 7, 13);
+p3 = p2 + p1;
+p3.PRINT(); "\n".PRINT();
