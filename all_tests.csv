@@ -9,6 +9,7 @@ bad_class_params.qk,PARSER
 bad_contravariance.qk,CLASS_HIERARCHY
 bad_duplicate_class.qk,PARSER
 bad_escape.qk,SCANNER
+bad_f18_final_pt_type_inf.qk,TYPE_INF
 bad_init.qk,INIT_BEFORE_USE
 bad_method_field_duplicate.qk,INIT_BEFORE_USE
 bad_return_only_if_false.qk,CLASS_HIERARCHY
@@ -27,6 +28,8 @@ good_Pt.qk,PASS
 good_Pt2.qk,PASS
 good_add_return_none.qk,PASS
 good_adv_constructor_init.qk,PASS
+good_f18_final_3d_pt.qk,PASS
+good_f18_final_pt_print.qk,PASS
 good_init_before_use.qk,PASS
 good_return_both_if.qk,PASS
 good_rgb.qk,PASS

@@ -1,0 +1,24 @@
+/*
+ * Type inference for x resolves to "Obj".  However, on line 22
+ * Obj (i.e., variable "x") has no method PLUS (i.e., syntactic sugar
+ * for "+").
+ */
+class Pt(x: Int, y: Int) {
+    this.x = x; this.y = y;
+    def x_(): Int { return this.x; }
+    def y_(): Int { return this.y; }
+    def PLUS(other: Pt): Pt {
+        return Pt(this.x + other.x_(), this.y + other.y_());
+    }
+}
+
+x = 42;
+if x < 13 {
+    x = Pt(5, 7);
+    y = Pt(4, 2);
+    z = x + y;
+} else {
+    x = 5;
+    z = x + 4;
+}
+z.PRINT(); "\n".PRINT();
